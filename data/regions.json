@@ -1,0 +1,190 @@
+{
+  "regions": [
+    {
+      "region_id": 1,
+      "name": "Península",
+      "entidades": [
+        {
+          "cve_ent": 2,
+          "name": "Baja California"
+        },
+        {
+          "cve_ent": 3,
+          "name": "Baja California Sur"
+        },
+        {
+          "cve_ent": 26,
+          "name": "Sonora"
+        }
+      ]
+    },
+    {
+      "region_id": 2,
+      "name": "Nor-Occidental",
+      "entidades": [
+        {
+          "cve_ent": 8,
+          "name": "Chihuahua"
+        },
+        {
+          "cve_ent": 10,
+          "name": "Durango"
+        }
+      ]
+    },
+    {
+      "region_id": 3,
+      "name": "Nor-central",
+      "entidades": [
+        {
+          "cve_ent": 5,
+          "name": "Coahuila"
+        },
+        {
+          "cve_ent": 19,
+          "name": "Nuevo León"
+        }
+      ]
+    },
+    {
+      "region_id": 4,
+      "name": "Nor-Oriental",
+      "entidades": [
+        {
+          "cve_ent": 24,
+          "name": "San Luis Potosí"
+        },
+        {
+          "cve_ent": 28,
+          "name": "Tamaulipas"
+        }
+      ]
+    },
+    {
+      "region_id": 5,
+      "name": "Occidental",
+      "entidades": [
+        {
+          "cve_ent": 1,
+          "name": "Aguascalientes"
+        },
+        {
+          "cve_ent": 6,
+          "name": "Colima"
+        },
+        {
+          "cve_ent": 14,
+          "name": "Jalisco"
+        },
+        {
+          "cve_ent": 18,
+          "name": "Nayarit"
+        },
+        {
+          "cve_ent": 32,
+          "name": "Zacatecas"
+        }
+      ]
+    },
+    {
+      "region_id": 6,
+      "name": "Ciudad de México",
+      "entidades": [
+        {
+          "cve_ent": 9,
+          "name": "Ciudad de México"
+        }
+      ]
+    },
+    {
+      "region_id": 7,
+      "name": "Centro",
+      "entidades": [
+        {
+          "cve_ent": 11,
+          "name": "Guanajuato"
+        },
+        {
+          "cve_ent": 13,
+          "name": "Hidalgo"
+        },
+        {
+          "cve_ent": 15,
+          "name": "México"
+        },
+        {
+          "cve_ent": 17,
+          "name": "Morelos"
+        },
+        {
+          "cve_ent": 21,
+          "name": "Puebla"
+        },
+        {
+          "cve_ent": 22,
+          "name": "Querétaro"
+        },
+        {
+          "cve_ent": 29,
+          "name": "Tlaxcala"
+        }
+      ]
+    },
+    {
+      "region_id": 8,
+      "name": "Centro-Sur",
+      "entidades": [
+        {
+          "cve_ent": 12,
+          "name": "Guerrero"
+        },
+        {
+          "cve_ent": 16,
+          "name": "Michoacán"
+        },
+        {
+          "cve_ent": 20,
+          "name": "Oaxaca"
+        },
+        {
+          "cve_ent": 30,
+          "name": "Veracruz"
+        }
+      ]
+    },
+    {
+      "region_id": 9,
+      "name": "Sur",
+      "entidades": [
+        {
+          "cve_ent": 4,
+          "name": "Campeche"
+        },
+        {
+          "cve_ent": 7,
+          "name": "Chiapas"
+        },
+        {
+          "cve_ent": 23,
+          "name": "Quintana Roo"
+        },
+        {
+          "cve_ent": 27,
+          "name": "Tabasco"
+        },
+        {
+          "cve_ent": 31,
+          "name": "Yucatán"
+        }
+      ]
+    }
+  ],
+  "note": "Sinaloa (25) no se contempla en ENCODAT 2025; sin datos.",
+  "excluded_entidades": [
+    {
+      "cve_ent": 25,
+      "name": "Sinaloa",
+      "reason": "No contemplado en la encuesta 2025"
+    }
+  ]
+}
