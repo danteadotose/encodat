@@ -1,29 +1,32 @@
 import type { Config } from "tailwindcss";
+/* Los valores coinciden con los tokens de app/globals.css. Todos los pares
+   texto/fondo usados en la interfaz están verificados a WCAG AA (≥4.5:1 en
+   texto, ≥3:1 en marcas de datos y bordes que portan información). */
 const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        paper: "#F6F8F6",
+        paper: "#FAF9F5",
         surface: "#FFFFFF",
-        ink: "#1A1813",
-        subink: "#57564E",
-        faint: "#666D68",
-        line: "#DCE3DD",
-        teal: { wash: "#E3F0EF", soft: "#6FABAF", DEFAULT: "#137A80", deep: "#0C4F53", ink: "#093B3E" },
-        amber: { DEFAULT: "#B4611F", soft: "#E4A66A" },
-        indigo: { DEFAULT: "#33517E" },
+        ink: "#15211F",
+        subink: "#4A574F",
+        faint: "#5D6A62",
+        line: "#DDE3DC",
+        teal: { wash: "#EAF2F0", soft: "#8DBFB7", DEFAULT: "#0B5A52", deep: "#084741", ink: "#062F2B" },
+        amber: { DEFAULT: "#9A4E11", soft: "#B87333", wash: "#FBF1E3", ink: "#7A3D06" },
+        indigo: { DEFAULT: "#2E4A7D" },
       },
       fontFamily: {
         display: ["\"Iowan Old Style\"", "\"Palatino Linotype\"", "Palatino", "Georgia", "Cambria", "serif"],
         sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "\"Segoe UI\"", "Roboto", "Helvetica", "Arial", "sans-serif"],
       },
-      maxWidth: { measure: "62ch" },
+      maxWidth: { measure: "68ch" },
       boxShadow: {
-        card: "0 1px 2px rgba(26,24,19,.04), 0 1px 1px rgba(26,24,19,.03)",
-        lift: "0 6px 24px -8px rgba(12,79,83,.18), 0 2px 6px rgba(26,24,19,.05)",
+        card: "0 1px 2px rgba(21,33,31,.05)",
+        lift: "0 8px 24px -10px rgba(8,71,65,.22), 0 2px 6px rgba(21,33,31,.05)",
       },
-      letterSpacing: { kicker: "0.14em" },
+      letterSpacing: { kicker: "0.12em" },
     },
   },
   plugins: [],

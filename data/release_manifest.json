@@ -1,0 +1,5398 @@
+{
+  "audit_date": "2026-09-15",
+  "source_sha256": {
+    "estimates": "0bf4bad1da724bfaccb244c157377fa29031d1b9c5efeb9c99632c7192e04b11",
+    "indicators": "88b3cba07b376fd2679e9caaa3e46a1ea118a59472cddd45ee90adc7499963c9",
+    "regions": "b450170d3341ea419c40e8aae1b0f37bd18c4a8e88b6a47313b458efe08f8b83"
+  },
+  "checks": {
+    "snapshot_records": 6103,
+    "snapshot_indicators": 68,
+    "duplicate_rows": 0,
+    "integrity_failures": 0,
+    "snapshot_equals_analysis_output": true,
+    "pilot_rows_reproduced": 90,
+    "pilot_published_rows_checked": 36,
+    "pilot_point_and_ci_fields_checked": 108,
+    "pilot_published_rounding_mismatches": 0,
+    "reviewed_indicators": 7,
+    "reviewed_rows_reproduced": 630,
+    "published_rows_checked": 111,
+    "published_point_and_ci_fields_checked": 333,
+    "published_category_n_verified": 111,
+    "published_rounding_mismatches": 0,
+    "blocked_degenerate_intervals": 3,
+    "allowed_cells": 627,
+    "regions_crosswalk_matches_source": true,
+    "legacy_status_counts": {
+      "difiere": 12,
+      "coincide": 38,
+      "aproximado": 10,
+      "sin referencia": 8
+    },
+    "regate_allowed_cells_rechecked": 627,
+    "regate_fields_per_cell": 8,
+    "regate_drift_detected": 0,
+    "reviewed_indicator_ids": [
+      "alc_alguna_vez",
+      "ideacion_suicida",
+      "intento_suicida",
+      "malestar_k10",
+      "plan_suicida",
+      "trat_salud_mental",
+      "violencia_cualquiera"
+    ],
+    "indicators_with_official_syntax_derivation": 11,
+    "indicators_project_reconstruction": 57
+  },
+  "availability": [
+    {
+      "indicator_id": "droga_cualq_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 0.71,
+      "legacy_max_target_diff": 2.11,
+      "derived_variable": "prev_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Prevalencia de cualquier droga alguna vez",
+      "source_variables": [
+        "di1a",
+        "di1b",
+        "di1c",
+        "di1d",
+        "di1e",
+        "di1f",
+        "di1f1",
+        "di1g",
+        "di1h",
+        "di1i",
+        "di4a",
+        "di4b",
+        "di4c",
+        "di4d",
+        "di4e",
+        "di4f",
+        "di4f1",
+        "di4g",
+        "di4h",
+        "di4i",
+        "dm1a",
+        "dm1b",
+        "dm1c",
+        "dm1d",
+        "dm3a1",
+        "dm3b1",
+        "dm3c1",
+        "dm3d1"
+      ]
+    },
+    {
+      "indicator_id": "droga_cualq_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 0.71,
+      "legacy_max_target_diff": 2.11,
+      "derived_variable": "prev_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Prevalencia de cualquier droga alguna vez",
+      "source_variables": [
+        "di1a",
+        "di1b",
+        "di1c",
+        "di1d",
+        "di1e",
+        "di1f",
+        "di1f1",
+        "di1g",
+        "di1h",
+        "di1i",
+        "di4a",
+        "di4b",
+        "di4c",
+        "di4d",
+        "di4e",
+        "di4f",
+        "di4f1",
+        "di4g",
+        "di4h",
+        "di4i",
+        "dm1a",
+        "dm1b",
+        "dm1c",
+        "dm1d",
+        "dm3a1",
+        "dm3b1",
+        "dm3c1",
+        "dm3d1"
+      ]
+    },
+    {
+      "indicator_id": "drogaileg_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.04,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": "cdi_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Prevalencia de cualquier droga ilegal alguna vez",
+      "source_variables": [
+        "di1a",
+        "di1b",
+        "di1c",
+        "di1d",
+        "di1e",
+        "di1f",
+        "di1f1",
+        "di1g",
+        "di1h",
+        "di1i",
+        "di4a",
+        "di4b",
+        "di4c",
+        "di4d",
+        "di4e",
+        "di4f",
+        "di4f1",
+        "di4g",
+        "di4h",
+        "di4i"
+      ]
+    },
+    {
+      "indicator_id": "drogaileg_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.04,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": "cdi_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Prevalencia de cualquier droga ilegal alguna vez",
+      "source_variables": [
+        "di1a",
+        "di1b",
+        "di1c",
+        "di1d",
+        "di1e",
+        "di1f",
+        "di1f1",
+        "di1g",
+        "di1h",
+        "di1i",
+        "di4a",
+        "di4b",
+        "di4c",
+        "di4d",
+        "di4e",
+        "di4f",
+        "di4f1",
+        "di4g",
+        "di4h",
+        "di4i"
+      ]
+    },
+    {
+      "indicator_id": "cannabis_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.06,
+      "derived_variable": "mar_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Mariguana Alguna Vez",
+      "source_variables": [
+        "di1a",
+        "di4a"
+      ]
+    },
+    {
+      "indicator_id": "cannabis_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.06,
+      "derived_variable": "mar_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Mariguana Alguna Vez",
+      "source_variables": [
+        "di1a",
+        "di4a"
+      ]
+    },
+    {
+      "indicator_id": "cocaina_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": "coc2_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Cocaína completa Alguna Vez",
+      "source_variables": [
+        "di1b",
+        "di4b",
+        "di1c",
+        "di4c"
+      ]
+    },
+    {
+      "indicator_id": "cocaina_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": "coc2_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Cocaína completa Alguna Vez",
+      "source_variables": [
+        "di1b",
+        "di4b",
+        "di1c",
+        "di4c"
+      ]
+    },
+    {
+      "indicator_id": "crack_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.03,
+      "derived_variable": "cra_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Crack Alguna Vez",
+      "source_variables": [
+        "di1c",
+        "di4c"
+      ]
+    },
+    {
+      "indicator_id": "crack_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.03,
+      "derived_variable": "cra_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Crack Alguna Vez",
+      "source_variables": [
+        "di1c",
+        "di4c"
+      ]
+    },
+    {
+      "indicator_id": "aluc_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.05,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": "alu_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Alucinógenos Alguna Vez",
+      "source_variables": [
+        "di1d",
+        "di4d"
+      ]
+    },
+    {
+      "indicator_id": "aluc_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.05,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": "alu_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Alucinógenos Alguna Vez",
+      "source_variables": [
+        "di1d",
+        "di4d"
+      ]
+    },
+    {
+      "indicator_id": "inhalables_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.07,
+      "legacy_max_target_diff": 0.07,
+      "derived_variable": "inh_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Inhalables Alguna Vez",
+      "source_variables": [
+        "di1e",
+        "di4e"
+      ]
+    },
+    {
+      "indicator_id": "inhalables_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.07,
+      "legacy_max_target_diff": 0.07,
+      "derived_variable": "inh_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Inhalables Alguna Vez",
+      "source_variables": [
+        "di1e",
+        "di4e"
+      ]
+    },
+    {
+      "indicator_id": "heroina_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.04,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": "her_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Heroína Alguna Vez",
+      "source_variables": [
+        "di1f",
+        "di4f"
+      ]
+    },
+    {
+      "indicator_id": "heroina_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.04,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": "her_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Heroína Alguna Vez",
+      "source_variables": [
+        "di1f",
+        "di4f"
+      ]
+    },
+    {
+      "indicator_id": "fentanilo_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.05,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": "fent_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Fentanilo no médico Alguna Vez",
+      "source_variables": [
+        "di1f1",
+        "di4f1"
+      ]
+    },
+    {
+      "indicator_id": "fentanilo_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.05,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": "fent_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Fentanilo no médico Alguna Vez",
+      "source_variables": [
+        "di1f1",
+        "di4f1"
+      ]
+    },
+    {
+      "indicator_id": "ats_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.01,
+      "legacy_max_target_diff": 0.07,
+      "derived_variable": "met_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Estimulantes tipo anfetamínico Alguna Vez",
+      "source_variables": [
+        "di1g",
+        "di4g"
+      ]
+    },
+    {
+      "indicator_id": "ats_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.01,
+      "legacy_max_target_diff": 0.07,
+      "derived_variable": "met_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Estimulantes tipo anfetamínico Alguna Vez",
+      "source_variables": [
+        "di1g",
+        "di4g"
+      ]
+    },
+    {
+      "indicator_id": "otras_ileg_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.07,
+      "legacy_max_target_diff": 0.17,
+      "derived_variable": "drog_ile_av2",
+      "syntax_source": "oficial",
+      "official_label": "Consumo de drogas alguna vez sin mariguana, cocaína+ ni metanfetaminas",
+      "source_variables": [
+        "di1d",
+        "di1e",
+        "di1f",
+        "di1f1",
+        "di1h",
+        "di1i",
+        "di4d",
+        "di4e",
+        "di4f",
+        "di4f1",
+        "di4h",
+        "di4i"
+      ]
+    },
+    {
+      "indicator_id": "otras_ileg_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.07,
+      "legacy_max_target_diff": 0.17,
+      "derived_variable": "drog_ile_av2",
+      "syntax_source": "oficial",
+      "official_label": "Consumo de drogas alguna vez sin mariguana, cocaína+ ni metanfetaminas",
+      "source_variables": [
+        "di1d",
+        "di1e",
+        "di1f",
+        "di1f1",
+        "di1h",
+        "di1i",
+        "di4d",
+        "di4e",
+        "di4f",
+        "di4f1",
+        "di4h",
+        "di4i"
+      ]
+    },
+    {
+      "indicator_id": "drogamedica_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 0.82,
+      "legacy_max_target_diff": 1.01,
+      "derived_variable": "cdm_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Prevalencia de cualquier droga médica alguna vez",
+      "source_variables": [
+        "dm1a",
+        "dm1b",
+        "dm1c",
+        "dm1d",
+        "dm3a1",
+        "dm3b1",
+        "dm3c1",
+        "dm3d1"
+      ]
+    },
+    {
+      "indicator_id": "drogamedica_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 0.82,
+      "legacy_max_target_diff": 1.01,
+      "derived_variable": "cdm_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Prevalencia de cualquier droga médica alguna vez",
+      "source_variables": [
+        "dm1a",
+        "dm1b",
+        "dm1c",
+        "dm1d",
+        "dm3a1",
+        "dm3b1",
+        "dm3c1",
+        "dm3d1"
+      ]
+    },
+    {
+      "indicator_id": "opioides_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.59,
+      "legacy_max_target_diff": 0.59,
+      "derived_variable": "opi_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Opioides Alguna Vez",
+      "source_variables": [
+        "dm1a",
+        "dm3a1"
+      ]
+    },
+    {
+      "indicator_id": "opioides_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.59,
+      "legacy_max_target_diff": 0.59,
+      "derived_variable": "opi_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Opioides Alguna Vez",
+      "source_variables": [
+        "dm1a",
+        "dm3a1"
+      ]
+    },
+    {
+      "indicator_id": "tranq_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.07,
+      "legacy_max_target_diff": 0.07,
+      "derived_variable": "tra_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Tranquilizantes Alguna Vez",
+      "source_variables": [
+        "dm1b",
+        "dm3b1"
+      ]
+    },
+    {
+      "indicator_id": "tranq_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.07,
+      "legacy_max_target_diff": 0.07,
+      "derived_variable": "tra_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Tranquilizantes Alguna Vez",
+      "source_variables": [
+        "dm1b",
+        "dm3b1"
+      ]
+    },
+    {
+      "indicator_id": "sedantes_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.19,
+      "legacy_max_target_diff": 0.19,
+      "derived_variable": "sed_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Sedantes Alguna Vez",
+      "source_variables": [
+        "dm1c",
+        "dm3c1"
+      ]
+    },
+    {
+      "indicator_id": "sedantes_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.19,
+      "legacy_max_target_diff": 0.19,
+      "derived_variable": "sed_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Sedantes Alguna Vez",
+      "source_variables": [
+        "dm1c",
+        "dm3c1"
+      ]
+    },
+    {
+      "indicator_id": "estimmed_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.03,
+      "derived_variable": "anf_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Anfetaminas Alguna Vez",
+      "source_variables": [
+        "dm1d",
+        "dm3d1"
+      ]
+    },
+    {
+      "indicator_id": "estimmed_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.03,
+      "derived_variable": "anf_av",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Anfetaminas Alguna Vez",
+      "source_variables": [
+        "dm1d",
+        "dm3d1"
+      ]
+    },
+    {
+      "indicator_id": "droga_cualq_ult_ano",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.47,
+      "legacy_max_target_diff": 0.62,
+      "derived_variable": "prev_ua",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Prevalencia de cualquier droga último año",
+      "source_variables": [
+        "di6a",
+        "di6b",
+        "di6c",
+        "di6d",
+        "di6e",
+        "di6f",
+        "di6f1",
+        "di6g",
+        "di6h",
+        "di6i",
+        "dm1a",
+        "dm1b",
+        "dm1c",
+        "dm1d",
+        "dm3a1",
+        "dm3b1",
+        "dm3c1",
+        "dm3d1",
+        "dm6a",
+        "dm6b",
+        "dm6c",
+        "dm6d"
+      ]
+    },
+    {
+      "indicator_id": "droga_cualq_ult_ano",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.47,
+      "legacy_max_target_diff": 0.62,
+      "derived_variable": "prev_ua",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Prevalencia de cualquier droga último año",
+      "source_variables": [
+        "di6a",
+        "di6b",
+        "di6c",
+        "di6d",
+        "di6e",
+        "di6f",
+        "di6f1",
+        "di6g",
+        "di6h",
+        "di6i",
+        "dm1a",
+        "dm1b",
+        "dm1c",
+        "dm1d",
+        "dm3a1",
+        "dm3b1",
+        "dm3c1",
+        "dm3d1",
+        "dm6a",
+        "dm6b",
+        "dm6c",
+        "dm6d"
+      ]
+    },
+    {
+      "indicator_id": "drogaileg_ult_ano",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.1,
+      "legacy_max_target_diff": 0.1,
+      "derived_variable": "cdi_ua",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Prevalencia de cualquier droga ilegal último año",
+      "source_variables": [
+        "di6a",
+        "di6b",
+        "di6c",
+        "di6d",
+        "di6e",
+        "di6f",
+        "di6f1",
+        "di6g",
+        "di6h",
+        "di6i"
+      ]
+    },
+    {
+      "indicator_id": "drogaileg_ult_ano",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.1,
+      "legacy_max_target_diff": 0.1,
+      "derived_variable": "cdi_ua",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Prevalencia de cualquier droga ilegal último año",
+      "source_variables": [
+        "di6a",
+        "di6b",
+        "di6c",
+        "di6d",
+        "di6e",
+        "di6f",
+        "di6f1",
+        "di6g",
+        "di6h",
+        "di6i"
+      ]
+    },
+    {
+      "indicator_id": "drogamedica_ult_ano",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.57,
+      "legacy_max_target_diff": 0.66,
+      "derived_variable": "cdm_ua",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Prevalencia de cualquier droga médica último año",
+      "source_variables": [
+        "dm1a",
+        "dm1b",
+        "dm1c",
+        "dm1d",
+        "dm3a1",
+        "dm3b1",
+        "dm3c1",
+        "dm3d1",
+        "dm6a",
+        "dm6b",
+        "dm6c",
+        "dm6d"
+      ]
+    },
+    {
+      "indicator_id": "drogamedica_ult_ano",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.57,
+      "legacy_max_target_diff": 0.66,
+      "derived_variable": "cdm_ua",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Prevalencia de cualquier droga médica último año",
+      "source_variables": [
+        "dm1a",
+        "dm1b",
+        "dm1c",
+        "dm1d",
+        "dm3a1",
+        "dm3b1",
+        "dm3c1",
+        "dm3d1",
+        "dm6a",
+        "dm6b",
+        "dm6c",
+        "dm6d"
+      ]
+    },
+    {
+      "indicator_id": "cannabis_ult_ano",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.12,
+      "legacy_max_target_diff": 0.12,
+      "derived_variable": "mar_ua",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Mariguana Último Año",
+      "source_variables": [
+        "di6a"
+      ]
+    },
+    {
+      "indicator_id": "cannabis_ult_ano",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.12,
+      "legacy_max_target_diff": 0.12,
+      "derived_variable": "mar_ua",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Mariguana Último Año",
+      "source_variables": [
+        "di6a"
+      ]
+    },
+    {
+      "indicator_id": "cocaina_ult_ano",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.12,
+      "legacy_max_target_diff": 0.12,
+      "derived_variable": "coc_ua",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Cocaína Último Año",
+      "source_variables": [
+        "di6b"
+      ]
+    },
+    {
+      "indicator_id": "cocaina_ult_ano",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.12,
+      "legacy_max_target_diff": 0.12,
+      "derived_variable": "coc_ua",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Cocaína Último Año",
+      "source_variables": [
+        "di6b"
+      ]
+    },
+    {
+      "indicator_id": "ats_ult_ano",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.02,
+      "legacy_max_target_diff": 0.02,
+      "derived_variable": "met_ua",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Estimulantes tipo anfetamínico Último Año",
+      "source_variables": [
+        "di6g"
+      ]
+    },
+    {
+      "indicator_id": "ats_ult_ano",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.02,
+      "legacy_max_target_diff": 0.02,
+      "derived_variable": "met_ua",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Estimulantes tipo anfetamínico Último Año",
+      "source_variables": [
+        "di6g"
+      ]
+    },
+    {
+      "indicator_id": "dep_drogas",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 0.79,
+      "legacy_max_target_diff": 1.28,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "dep_drogas",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 0.79,
+      "legacy_max_target_diff": 1.28,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "trat_drogas_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 1.22,
+      "legacy_max_target_diff": 1.81,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "trat_drogas_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 1.22,
+      "legacy_max_target_diff": 1.81,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "edad_inicio_droga_ileg",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.06,
+      "legacy_max_target_diff": 0.06,
+      "derived_variable": "drog_ile_ini_proyecto",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Edad de inicio de cualquier droga ilegal (derivación del proyecto)",
+      "source_variables": [
+        "di4a",
+        "di4b",
+        "di4c",
+        "di4d",
+        "di4e",
+        "di4f",
+        "di4f1",
+        "di4g",
+        "di4h",
+        "di4i"
+      ]
+    },
+    {
+      "indicator_id": "edad_inicio_droga_ileg",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.06,
+      "legacy_max_target_diff": 0.06,
+      "derived_variable": "drog_ile_ini_proyecto",
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": "Edad de inicio de cualquier droga ilegal (derivación del proyecto)",
+      "source_variables": [
+        "di4a",
+        "di4b",
+        "di4c",
+        "di4d",
+        "di4e",
+        "di4f",
+        "di4f1",
+        "di4g",
+        "di4h",
+        "di4i"
+      ]
+    },
+    {
+      "indicator_id": "edad_inicio_cannabis",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Sin referencia en el registro actual; falta auditoría específica de definición y estimación.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.04,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": "mar_ini",
+      "syntax_source": "oficial",
+      "official_label": "Edad de inicio de consumo mariguana",
+      "source_variables": [
+        "di4a"
+      ]
+    },
+    {
+      "indicator_id": "edad_inicio_cannabis",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Sin referencia en el registro actual; falta auditoría específica de definición y estimación.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.04,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": "mar_ini",
+      "syntax_source": "oficial",
+      "official_label": "Edad de inicio de consumo mariguana",
+      "source_variables": [
+        "di4a"
+      ]
+    },
+    {
+      "indicator_id": "droga_cualq_ult_mes",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "prev_um",
+      "syntax_source": "oficial",
+      "official_label": "Prevalencia de cualquier droga último mes",
+      "source_variables": [
+        "dm8a",
+        "dm8b",
+        "dm8c",
+        "dm8d",
+        "di8a",
+        "di8b",
+        "di8c",
+        "di8d",
+        "di8e",
+        "di8f",
+        "di8f1",
+        "di8g",
+        "di8h",
+        "di8i"
+      ]
+    },
+    {
+      "indicator_id": "droga_cualq_ult_mes",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "prev_um",
+      "syntax_source": "oficial",
+      "official_label": "Prevalencia de cualquier droga último mes",
+      "source_variables": [
+        "dm8a",
+        "dm8b",
+        "dm8c",
+        "dm8d",
+        "di8a",
+        "di8b",
+        "di8c",
+        "di8d",
+        "di8e",
+        "di8f",
+        "di8f1",
+        "di8g",
+        "di8h",
+        "di8i"
+      ]
+    },
+    {
+      "indicator_id": "drogaileg_ult_mes",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "cdi_um",
+      "syntax_source": "oficial",
+      "official_label": "Prevalencia de cualquier droga ilegal último mes",
+      "source_variables": [
+        "di8a",
+        "di8b",
+        "di8c",
+        "di8d",
+        "di8e",
+        "di8f",
+        "di8f1",
+        "di8g",
+        "di8h",
+        "di8i"
+      ]
+    },
+    {
+      "indicator_id": "drogaileg_ult_mes",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "cdi_um",
+      "syntax_source": "oficial",
+      "official_label": "Prevalencia de cualquier droga ilegal último mes",
+      "source_variables": [
+        "di8a",
+        "di8b",
+        "di8c",
+        "di8d",
+        "di8e",
+        "di8f",
+        "di8f1",
+        "di8g",
+        "di8h",
+        "di8i"
+      ]
+    },
+    {
+      "indicator_id": "cannabis_ult_mes",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "mar_um",
+      "syntax_source": "oficial",
+      "official_label": "Mariguana Último Mes",
+      "source_variables": [
+        "di8a"
+      ]
+    },
+    {
+      "indicator_id": "cannabis_ult_mes",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "mar_um",
+      "syntax_source": "oficial",
+      "official_label": "Mariguana Último Mes",
+      "source_variables": [
+        "di8a"
+      ]
+    },
+    {
+      "indicator_id": "cocaina_ult_mes",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "coc2_um",
+      "syntax_source": "oficial",
+      "official_label": "Cocaína completa Último Mes",
+      "source_variables": [
+        "di8b",
+        "di8c"
+      ]
+    },
+    {
+      "indicator_id": "cocaina_ult_mes",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "coc2_um",
+      "syntax_source": "oficial",
+      "official_label": "Cocaína completa Último Mes",
+      "source_variables": [
+        "di8b",
+        "di8c"
+      ]
+    },
+    {
+      "indicator_id": "ats_ult_mes",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "met_um",
+      "syntax_source": "oficial",
+      "official_label": "Estimulantes tipo anfetamínico Último Mes",
+      "source_variables": [
+        "di8g"
+      ]
+    },
+    {
+      "indicator_id": "ats_ult_mes",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "met_um",
+      "syntax_source": "oficial",
+      "official_label": "Estimulantes tipo anfetamínico Último Mes",
+      "source_variables": [
+        "di8g"
+      ]
+    },
+    {
+      "indicator_id": "drogamedica_ult_mes",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "cdm_um",
+      "syntax_source": "oficial",
+      "official_label": "Prevalencia de cualquier droga médica último mes",
+      "source_variables": [
+        "dm8a",
+        "dm8b",
+        "dm8c",
+        "dm8d"
+      ]
+    },
+    {
+      "indicator_id": "drogamedica_ult_mes",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "cdm_um",
+      "syntax_source": "oficial",
+      "official_label": "Prevalencia de cualquier droga médica último mes",
+      "source_variables": [
+        "dm8a",
+        "dm8b",
+        "dm8c",
+        "dm8d"
+      ]
+    },
+    {
+      "indicator_id": "edad_inicio_cualq_droga",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.18,
+      "legacy_max_target_diff": 0.49,
+      "derived_variable": "drog_ini",
+      "syntax_source": "oficial",
+      "official_label": "Edad de inicio de drogas médicas e ilegales",
+      "source_variables": [
+        "dm4a",
+        "dm4b",
+        "dm4c",
+        "dm4d",
+        "di4a",
+        "di4b",
+        "di4c",
+        "di4d",
+        "di4e",
+        "di4f",
+        "di4f1",
+        "di4g",
+        "di4h",
+        "di4i"
+      ]
+    },
+    {
+      "indicator_id": "edad_inicio_cualq_droga",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.18,
+      "legacy_max_target_diff": 0.49,
+      "derived_variable": "drog_ini",
+      "syntax_source": "oficial",
+      "official_label": "Edad de inicio de drogas médicas e ilegales",
+      "source_variables": [
+        "dm4a",
+        "dm4b",
+        "dm4c",
+        "dm4d",
+        "di4a",
+        "di4b",
+        "di4c",
+        "di4d",
+        "di4e",
+        "di4f",
+        "di4f1",
+        "di4g",
+        "di4h",
+        "di4i"
+      ]
+    },
+    {
+      "indicator_id": "edad_inicio_cocaina",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "coc2_ini",
+      "syntax_source": "oficial",
+      "official_label": "Edad de inicio de cocaína completa (cocaína + crack)",
+      "source_variables": [
+        "di4b",
+        "di4c"
+      ]
+    },
+    {
+      "indicator_id": "edad_inicio_cocaina",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": "coc2_ini",
+      "syntax_source": "oficial",
+      "official_label": "Edad de inicio de cocaína completa (cocaína + crack)",
+      "source_variables": [
+        "di4b",
+        "di4c"
+      ]
+    },
+    {
+      "indicator_id": "edad_inicio_ats",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.08,
+      "legacy_max_target_diff": 0.08,
+      "derived_variable": "met_ini",
+      "syntax_source": "oficial",
+      "official_label": "Edad de inicio de consumo estimulantes tipo anfetamínico",
+      "source_variables": [
+        "di4g"
+      ]
+    },
+    {
+      "indicator_id": "edad_inicio_ats",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Variable derivada con la sintaxis oficial en esta ronda (ver `derived_variable` y `syntax_source` en indicators.json). Derivar con la sintaxis oficial NO audita el indicador: falta contrastar definición, denominador y celdas publicadas, y el informe ENCODAT 2025 no publica cifras de último mes para drogas contra las que contrastarlo.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.08,
+      "legacy_max_target_diff": 0.08,
+      "derived_variable": "met_ini",
+      "syntax_source": "oficial",
+      "official_label": "Edad de inicio de consumo estimulantes tipo anfetamínico",
+      "source_variables": [
+        "di4g"
+      ]
+    },
+    {
+      "indicator_id": "alc_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 36 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 36 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_ult_ano",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 0.99,
+      "legacy_max_target_diff": 2.48,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_ult_ano",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 0.99,
+      "legacy_max_target_diff": 2.48,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_ult_mes",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 1.2,
+      "legacy_max_target_diff": 1.38,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_ult_mes",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 1.2,
+      "legacy_max_target_diff": 1.38,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_excesivo_ult_ano",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 1.45,
+      "legacy_max_target_diff": 2.2,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_excesivo_ult_ano",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 1.45,
+      "legacy_max_target_diff": 2.2,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_excesivo_ult_mes",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 1.25,
+      "legacy_max_target_diff": 1.35,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_excesivo_ult_mes",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 1.25,
+      "legacy_max_target_diff": 1.35,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_excesivo_semanal",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 0.75,
+      "legacy_max_target_diff": 0.8,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_excesivo_semanal",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 0.75,
+      "legacy_max_target_diff": 0.8,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_excesivo_diario",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 1.11,
+      "legacy_max_target_diff": 1.47,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "alc_excesivo_diario",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 1.11,
+      "legacy_max_target_diff": 1.47,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_cerveza",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 1.72,
+      "legacy_max_target_diff": 1.72,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_cerveza",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 1.72,
+      "legacy_max_target_diff": 1.72,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_destilados",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 0.7,
+      "legacy_max_target_diff": 0.7,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_destilados",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "difiere",
+      "legacy_national_diff": 0.7,
+      "legacy_max_target_diff": 0.7,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_vino",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.37,
+      "legacy_max_target_diff": 0.37,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_vino",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.37,
+      "legacy_max_target_diff": 0.37,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_preparadas",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.34,
+      "legacy_max_target_diff": 0.34,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_preparadas",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.34,
+      "legacy_max_target_diff": 0.34,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_pulque",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.1,
+      "legacy_max_target_diff": 0.1,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_pulque",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.1,
+      "legacy_max_target_diff": 0.1,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_aguardiente",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.09,
+      "legacy_max_target_diff": 0.09,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_aguardiente",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.09,
+      "legacy_max_target_diff": 0.09,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_otra",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.05,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "bebida_otra",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.05,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "edad_inicio_alcohol",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.06,
+      "legacy_max_target_diff": 0.06,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "edad_inicio_alcohol",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.06,
+      "legacy_max_target_diff": 0.06,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "dep_alcohol",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.24,
+      "legacy_max_target_diff": 0.4,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "dep_alcohol",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.24,
+      "legacy_max_target_diff": 0.4,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "trat_alcohol_alguna_vez",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.0,
+      "legacy_max_target_diff": 0.0,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "trat_alcohol_alguna_vez",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.0,
+      "legacy_max_target_diff": 0.0,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "trat_alcohol_ult_ano",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.01,
+      "legacy_max_target_diff": 0.01,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "trat_alcohol_ult_ano",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.01,
+      "legacy_max_target_diff": 0.01,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "malestar_k10",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 18 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.02,
+      "legacy_max_target_diff": 0.02,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "malestar_k10",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 18 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.02,
+      "legacy_max_target_diff": 0.02,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "ideacion_suicida",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 9 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.02,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "ideacion_suicida",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 9 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.02,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "plan_suicida",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 9 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.04,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "plan_suicida",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 9 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.04,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "intento_suicida",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 9 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.05,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "intento_suicida",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 9 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.05,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "violencia_cualquiera",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 18 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.02,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "violencia_cualquiera",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 18 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.02,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "violencia_sust_victimario",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "violencia_sust_victimario",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "violencia_sust_victima",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Sin referencia en el registro actual; falta auditoría específica de definición y estimación.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "violencia_sust_victima",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Sin referencia en el registro actual; falta auditoría específica de definición y estimación.",
+      "legacy_validation_status": "sin referencia",
+      "legacy_national_diff": null,
+      "legacy_max_target_diff": null,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "juego_apuestas",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.31,
+      "legacy_max_target_diff": 0.4,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "juego_apuestas",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.31,
+      "legacy_max_target_diff": 0.4,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "juego_problematico",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.2,
+      "legacy_max_target_diff": 0.28,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "juego_problematico",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.2,
+      "legacy_max_target_diff": 0.28,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "juego_recreativo",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.2,
+      "legacy_max_target_diff": 0.2,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "juego_recreativo",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "not_validated",
+      "reason": "Diferencia con el objetivo nacional registrada por el propio análisis; falta resolver derivación y reproducir fuente antes de exponer resultados como validados.",
+      "legacy_validation_status": "aproximado",
+      "legacy_national_diff": 0.2,
+      "legacy_max_target_diff": 0.2,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "videojuegos",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.01,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "videojuegos",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.01,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "videojuego_trastorno",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.02,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "videojuego_trastorno",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.02,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "trat_salud_mental",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 12 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.01,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "trat_salud_mental",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": true,
+      "status": "verified",
+      "reason": "90 celdas reproducidas; 12 celdas contrastadas directamente con prevalencia, IC y N de categoría del informe. Definición operacional, respuestas válidas y regionalización verificadas.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.01,
+      "legacy_max_target_diff": 0.05,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "tab_fumado_ult_mes",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.04,
+      "legacy_max_target_diff": 0.08,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "tab_fumado_ult_mes",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.04,
+      "legacy_max_target_diff": 0.08,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "ecig_ult_mes",
+      "geo_level": "nacional",
+      "region_ids": [
+        0
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    },
+    {
+      "indicator_id": "ecig_ult_mes",
+      "geo_level": "region",
+      "region_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sexes": [
+        "total",
+        "hombres",
+        "mujeres"
+      ],
+      "age_groups": [
+        "12-65",
+        "12-17",
+        "18-65"
+      ],
+      "allow_results": false,
+      "status": "requires_review",
+      "reason": "Coincidencia nacional dentro de la tolerancia interna; falta verificar definición, denominador y celdas publicadas para certificar este indicador. No se declara incorrecto.",
+      "legacy_validation_status": "coincide",
+      "legacy_national_diff": 0.03,
+      "legacy_max_target_diff": 0.04,
+      "derived_variable": null,
+      "syntax_source": "reconstruccion_proyecto",
+      "official_label": null,
+      "source_variables": []
+    }
+  ],
+  "blocked_cells": [
+    {
+      "key": "plan_suicida|region|1|hombres|12-17",
+      "indicator_id": "plan_suicida",
+      "geo_level": "region",
+      "region_id": 1,
+      "sex": "hombres",
+      "age_group": "12-17",
+      "validation_status": "precision_not_evaluable",
+      "allow_results": false,
+      "reason": "Sin casos observados: el método genera un IC 0–0 degenerado y CV no disponible. Se requiere un procedimiento defendible para expresar incertidumbre; no se publica como ausencia de consumo o evento."
+    },
+    {
+      "key": "intento_suicida|region|1|hombres|12-17",
+      "indicator_id": "intento_suicida",
+      "geo_level": "region",
+      "region_id": 1,
+      "sex": "hombres",
+      "age_group": "12-17",
+      "validation_status": "precision_not_evaluable",
+      "allow_results": false,
+      "reason": "Sin casos observados: el método genera un IC 0–0 degenerado y CV no disponible. Se requiere un procedimiento defendible para expresar incertidumbre; no se publica como ausencia de consumo o evento."
+    },
+    {
+      "key": "intento_suicida|region|8|hombres|18-65",
+      "indicator_id": "intento_suicida",
+      "geo_level": "region",
+      "region_id": 8,
+      "sex": "hombres",
+      "age_group": "18-65",
+      "validation_status": "precision_not_evaluable",
+      "allow_results": false,
+      "reason": "Sin casos observados: el método genera un IC 0–0 degenerado y CV no disponible. Se requiere un procedimiento defendible para expresar incertidumbre; no se publica como ausencia de consumo o evento."
+    }
+  ],
+  "allowed_keys": [
+    "alc_alguna_vez|nacional|0|total|12-65",
+    "alc_alguna_vez|region|1|total|12-65",
+    "alc_alguna_vez|region|2|total|12-65",
+    "alc_alguna_vez|region|3|total|12-65",
+    "alc_alguna_vez|region|4|total|12-65",
+    "alc_alguna_vez|region|5|total|12-65",
+    "alc_alguna_vez|region|6|total|12-65",
+    "alc_alguna_vez|region|7|total|12-65",
+    "alc_alguna_vez|region|8|total|12-65",
+    "alc_alguna_vez|region|9|total|12-65",
+    "alc_alguna_vez|nacional|0|hombres|12-65",
+    "alc_alguna_vez|region|1|hombres|12-65",
+    "alc_alguna_vez|region|2|hombres|12-65",
+    "alc_alguna_vez|region|3|hombres|12-65",
+    "alc_alguna_vez|region|4|hombres|12-65",
+    "alc_alguna_vez|region|5|hombres|12-65",
+    "alc_alguna_vez|region|6|hombres|12-65",
+    "alc_alguna_vez|region|7|hombres|12-65",
+    "alc_alguna_vez|region|8|hombres|12-65",
+    "alc_alguna_vez|region|9|hombres|12-65",
+    "alc_alguna_vez|nacional|0|mujeres|12-65",
+    "alc_alguna_vez|region|1|mujeres|12-65",
+    "alc_alguna_vez|region|2|mujeres|12-65",
+    "alc_alguna_vez|region|3|mujeres|12-65",
+    "alc_alguna_vez|region|4|mujeres|12-65",
+    "alc_alguna_vez|region|5|mujeres|12-65",
+    "alc_alguna_vez|region|6|mujeres|12-65",
+    "alc_alguna_vez|region|7|mujeres|12-65",
+    "alc_alguna_vez|region|8|mujeres|12-65",
+    "alc_alguna_vez|region|9|mujeres|12-65",
+    "alc_alguna_vez|nacional|0|total|12-17",
+    "alc_alguna_vez|region|1|total|12-17",
+    "alc_alguna_vez|region|2|total|12-17",
+    "alc_alguna_vez|region|3|total|12-17",
+    "alc_alguna_vez|region|4|total|12-17",
+    "alc_alguna_vez|region|5|total|12-17",
+    "alc_alguna_vez|region|6|total|12-17",
+    "alc_alguna_vez|region|7|total|12-17",
+    "alc_alguna_vez|region|8|total|12-17",
+    "alc_alguna_vez|region|9|total|12-17",
+    "alc_alguna_vez|nacional|0|hombres|12-17",
+    "alc_alguna_vez|region|1|hombres|12-17",
+    "alc_alguna_vez|region|2|hombres|12-17",
+    "alc_alguna_vez|region|3|hombres|12-17",
+    "alc_alguna_vez|region|4|hombres|12-17",
+    "alc_alguna_vez|region|5|hombres|12-17",
+    "alc_alguna_vez|region|6|hombres|12-17",
+    "alc_alguna_vez|region|7|hombres|12-17",
+    "alc_alguna_vez|region|8|hombres|12-17",
+    "alc_alguna_vez|region|9|hombres|12-17",
+    "alc_alguna_vez|nacional|0|mujeres|12-17",
+    "alc_alguna_vez|region|1|mujeres|12-17",
+    "alc_alguna_vez|region|2|mujeres|12-17",
+    "alc_alguna_vez|region|3|mujeres|12-17",
+    "alc_alguna_vez|region|4|mujeres|12-17",
+    "alc_alguna_vez|region|5|mujeres|12-17",
+    "alc_alguna_vez|region|6|mujeres|12-17",
+    "alc_alguna_vez|region|7|mujeres|12-17",
+    "alc_alguna_vez|region|8|mujeres|12-17",
+    "alc_alguna_vez|region|9|mujeres|12-17",
+    "alc_alguna_vez|nacional|0|total|18-65",
+    "alc_alguna_vez|region|1|total|18-65",
+    "alc_alguna_vez|region|2|total|18-65",
+    "alc_alguna_vez|region|3|total|18-65",
+    "alc_alguna_vez|region|4|total|18-65",
+    "alc_alguna_vez|region|5|total|18-65",
+    "alc_alguna_vez|region|6|total|18-65",
+    "alc_alguna_vez|region|7|total|18-65",
+    "alc_alguna_vez|region|8|total|18-65",
+    "alc_alguna_vez|region|9|total|18-65",
+    "alc_alguna_vez|nacional|0|hombres|18-65",
+    "alc_alguna_vez|region|1|hombres|18-65",
+    "alc_alguna_vez|region|2|hombres|18-65",
+    "alc_alguna_vez|region|3|hombres|18-65",
+    "alc_alguna_vez|region|4|hombres|18-65",
+    "alc_alguna_vez|region|5|hombres|18-65",
+    "alc_alguna_vez|region|6|hombres|18-65",
+    "alc_alguna_vez|region|7|hombres|18-65",
+    "alc_alguna_vez|region|8|hombres|18-65",
+    "alc_alguna_vez|region|9|hombres|18-65",
+    "alc_alguna_vez|nacional|0|mujeres|18-65",
+    "alc_alguna_vez|region|1|mujeres|18-65",
+    "alc_alguna_vez|region|2|mujeres|18-65",
+    "alc_alguna_vez|region|3|mujeres|18-65",
+    "alc_alguna_vez|region|4|mujeres|18-65",
+    "alc_alguna_vez|region|5|mujeres|18-65",
+    "alc_alguna_vez|region|6|mujeres|18-65",
+    "alc_alguna_vez|region|7|mujeres|18-65",
+    "alc_alguna_vez|region|8|mujeres|18-65",
+    "alc_alguna_vez|region|9|mujeres|18-65",
+    "malestar_k10|nacional|0|total|12-65",
+    "malestar_k10|region|1|total|12-65",
+    "malestar_k10|region|2|total|12-65",
+    "malestar_k10|region|3|total|12-65",
+    "malestar_k10|region|4|total|12-65",
+    "malestar_k10|region|5|total|12-65",
+    "malestar_k10|region|6|total|12-65",
+    "malestar_k10|region|7|total|12-65",
+    "malestar_k10|region|8|total|12-65",
+    "malestar_k10|region|9|total|12-65",
+    "malestar_k10|nacional|0|hombres|12-65",
+    "malestar_k10|region|1|hombres|12-65",
+    "malestar_k10|region|2|hombres|12-65",
+    "malestar_k10|region|3|hombres|12-65",
+    "malestar_k10|region|4|hombres|12-65",
+    "malestar_k10|region|5|hombres|12-65",
+    "malestar_k10|region|6|hombres|12-65",
+    "malestar_k10|region|7|hombres|12-65",
+    "malestar_k10|region|8|hombres|12-65",
+    "malestar_k10|region|9|hombres|12-65",
+    "malestar_k10|nacional|0|mujeres|12-65",
+    "malestar_k10|region|1|mujeres|12-65",
+    "malestar_k10|region|2|mujeres|12-65",
+    "malestar_k10|region|3|mujeres|12-65",
+    "malestar_k10|region|4|mujeres|12-65",
+    "malestar_k10|region|5|mujeres|12-65",
+    "malestar_k10|region|6|mujeres|12-65",
+    "malestar_k10|region|7|mujeres|12-65",
+    "malestar_k10|region|8|mujeres|12-65",
+    "malestar_k10|region|9|mujeres|12-65",
+    "malestar_k10|nacional|0|total|12-17",
+    "malestar_k10|region|1|total|12-17",
+    "malestar_k10|region|2|total|12-17",
+    "malestar_k10|region|3|total|12-17",
+    "malestar_k10|region|4|total|12-17",
+    "malestar_k10|region|5|total|12-17",
+    "malestar_k10|region|6|total|12-17",
+    "malestar_k10|region|7|total|12-17",
+    "malestar_k10|region|8|total|12-17",
+    "malestar_k10|region|9|total|12-17",
+    "malestar_k10|nacional|0|hombres|12-17",
+    "malestar_k10|region|1|hombres|12-17",
+    "malestar_k10|region|2|hombres|12-17",
+    "malestar_k10|region|3|hombres|12-17",
+    "malestar_k10|region|4|hombres|12-17",
+    "malestar_k10|region|5|hombres|12-17",
+    "malestar_k10|region|6|hombres|12-17",
+    "malestar_k10|region|7|hombres|12-17",
+    "malestar_k10|region|8|hombres|12-17",
+    "malestar_k10|region|9|hombres|12-17",
+    "malestar_k10|nacional|0|mujeres|12-17",
+    "malestar_k10|region|1|mujeres|12-17",
+    "malestar_k10|region|2|mujeres|12-17",
+    "malestar_k10|region|3|mujeres|12-17",
+    "malestar_k10|region|4|mujeres|12-17",
+    "malestar_k10|region|5|mujeres|12-17",
+    "malestar_k10|region|6|mujeres|12-17",
+    "malestar_k10|region|7|mujeres|12-17",
+    "malestar_k10|region|8|mujeres|12-17",
+    "malestar_k10|region|9|mujeres|12-17",
+    "malestar_k10|nacional|0|total|18-65",
+    "malestar_k10|region|1|total|18-65",
+    "malestar_k10|region|2|total|18-65",
+    "malestar_k10|region|3|total|18-65",
+    "malestar_k10|region|4|total|18-65",
+    "malestar_k10|region|5|total|18-65",
+    "malestar_k10|region|6|total|18-65",
+    "malestar_k10|region|7|total|18-65",
+    "malestar_k10|region|8|total|18-65",
+    "malestar_k10|region|9|total|18-65",
+    "malestar_k10|nacional|0|hombres|18-65",
+    "malestar_k10|region|1|hombres|18-65",
+    "malestar_k10|region|2|hombres|18-65",
+    "malestar_k10|region|3|hombres|18-65",
+    "malestar_k10|region|4|hombres|18-65",
+    "malestar_k10|region|5|hombres|18-65",
+    "malestar_k10|region|6|hombres|18-65",
+    "malestar_k10|region|7|hombres|18-65",
+    "malestar_k10|region|8|hombres|18-65",
+    "malestar_k10|region|9|hombres|18-65",
+    "malestar_k10|nacional|0|mujeres|18-65",
+    "malestar_k10|region|1|mujeres|18-65",
+    "malestar_k10|region|2|mujeres|18-65",
+    "malestar_k10|region|3|mujeres|18-65",
+    "malestar_k10|region|4|mujeres|18-65",
+    "malestar_k10|region|5|mujeres|18-65",
+    "malestar_k10|region|6|mujeres|18-65",
+    "malestar_k10|region|7|mujeres|18-65",
+    "malestar_k10|region|8|mujeres|18-65",
+    "malestar_k10|region|9|mujeres|18-65",
+    "ideacion_suicida|nacional|0|total|12-65",
+    "ideacion_suicida|region|1|total|12-65",
+    "ideacion_suicida|region|2|total|12-65",
+    "ideacion_suicida|region|3|total|12-65",
+    "ideacion_suicida|region|4|total|12-65",
+    "ideacion_suicida|region|5|total|12-65",
+    "ideacion_suicida|region|6|total|12-65",
+    "ideacion_suicida|region|7|total|12-65",
+    "ideacion_suicida|region|8|total|12-65",
+    "ideacion_suicida|region|9|total|12-65",
+    "ideacion_suicida|nacional|0|hombres|12-65",
+    "ideacion_suicida|region|1|hombres|12-65",
+    "ideacion_suicida|region|2|hombres|12-65",
+    "ideacion_suicida|region|3|hombres|12-65",
+    "ideacion_suicida|region|4|hombres|12-65",
+    "ideacion_suicida|region|5|hombres|12-65",
+    "ideacion_suicida|region|6|hombres|12-65",
+    "ideacion_suicida|region|7|hombres|12-65",
+    "ideacion_suicida|region|8|hombres|12-65",
+    "ideacion_suicida|region|9|hombres|12-65",
+    "ideacion_suicida|nacional|0|mujeres|12-65",
+    "ideacion_suicida|region|1|mujeres|12-65",
+    "ideacion_suicida|region|2|mujeres|12-65",
+    "ideacion_suicida|region|3|mujeres|12-65",
+    "ideacion_suicida|region|4|mujeres|12-65",
+    "ideacion_suicida|region|5|mujeres|12-65",
+    "ideacion_suicida|region|6|mujeres|12-65",
+    "ideacion_suicida|region|7|mujeres|12-65",
+    "ideacion_suicida|region|8|mujeres|12-65",
+    "ideacion_suicida|region|9|mujeres|12-65",
+    "ideacion_suicida|nacional|0|total|12-17",
+    "ideacion_suicida|region|1|total|12-17",
+    "ideacion_suicida|region|2|total|12-17",
+    "ideacion_suicida|region|3|total|12-17",
+    "ideacion_suicida|region|4|total|12-17",
+    "ideacion_suicida|region|5|total|12-17",
+    "ideacion_suicida|region|6|total|12-17",
+    "ideacion_suicida|region|7|total|12-17",
+    "ideacion_suicida|region|8|total|12-17",
+    "ideacion_suicida|region|9|total|12-17",
+    "ideacion_suicida|nacional|0|hombres|12-17",
+    "ideacion_suicida|region|1|hombres|12-17",
+    "ideacion_suicida|region|2|hombres|12-17",
+    "ideacion_suicida|region|3|hombres|12-17",
+    "ideacion_suicida|region|4|hombres|12-17",
+    "ideacion_suicida|region|5|hombres|12-17",
+    "ideacion_suicida|region|6|hombres|12-17",
+    "ideacion_suicida|region|7|hombres|12-17",
+    "ideacion_suicida|region|8|hombres|12-17",
+    "ideacion_suicida|region|9|hombres|12-17",
+    "ideacion_suicida|nacional|0|mujeres|12-17",
+    "ideacion_suicida|region|1|mujeres|12-17",
+    "ideacion_suicida|region|2|mujeres|12-17",
+    "ideacion_suicida|region|3|mujeres|12-17",
+    "ideacion_suicida|region|4|mujeres|12-17",
+    "ideacion_suicida|region|5|mujeres|12-17",
+    "ideacion_suicida|region|6|mujeres|12-17",
+    "ideacion_suicida|region|7|mujeres|12-17",
+    "ideacion_suicida|region|8|mujeres|12-17",
+    "ideacion_suicida|region|9|mujeres|12-17",
+    "ideacion_suicida|nacional|0|total|18-65",
+    "ideacion_suicida|region|1|total|18-65",
+    "ideacion_suicida|region|2|total|18-65",
+    "ideacion_suicida|region|3|total|18-65",
+    "ideacion_suicida|region|4|total|18-65",
+    "ideacion_suicida|region|5|total|18-65",
+    "ideacion_suicida|region|6|total|18-65",
+    "ideacion_suicida|region|7|total|18-65",
+    "ideacion_suicida|region|8|total|18-65",
+    "ideacion_suicida|region|9|total|18-65",
+    "ideacion_suicida|nacional|0|hombres|18-65",
+    "ideacion_suicida|region|1|hombres|18-65",
+    "ideacion_suicida|region|2|hombres|18-65",
+    "ideacion_suicida|region|3|hombres|18-65",
+    "ideacion_suicida|region|4|hombres|18-65",
+    "ideacion_suicida|region|5|hombres|18-65",
+    "ideacion_suicida|region|6|hombres|18-65",
+    "ideacion_suicida|region|7|hombres|18-65",
+    "ideacion_suicida|region|8|hombres|18-65",
+    "ideacion_suicida|region|9|hombres|18-65",
+    "ideacion_suicida|nacional|0|mujeres|18-65",
+    "ideacion_suicida|region|1|mujeres|18-65",
+    "ideacion_suicida|region|2|mujeres|18-65",
+    "ideacion_suicida|region|3|mujeres|18-65",
+    "ideacion_suicida|region|4|mujeres|18-65",
+    "ideacion_suicida|region|5|mujeres|18-65",
+    "ideacion_suicida|region|6|mujeres|18-65",
+    "ideacion_suicida|region|7|mujeres|18-65",
+    "ideacion_suicida|region|8|mujeres|18-65",
+    "ideacion_suicida|region|9|mujeres|18-65",
+    "plan_suicida|nacional|0|total|12-65",
+    "plan_suicida|region|1|total|12-65",
+    "plan_suicida|region|2|total|12-65",
+    "plan_suicida|region|3|total|12-65",
+    "plan_suicida|region|4|total|12-65",
+    "plan_suicida|region|5|total|12-65",
+    "plan_suicida|region|6|total|12-65",
+    "plan_suicida|region|7|total|12-65",
+    "plan_suicida|region|8|total|12-65",
+    "plan_suicida|region|9|total|12-65",
+    "plan_suicida|nacional|0|hombres|12-65",
+    "plan_suicida|region|1|hombres|12-65",
+    "plan_suicida|region|2|hombres|12-65",
+    "plan_suicida|region|3|hombres|12-65",
+    "plan_suicida|region|4|hombres|12-65",
+    "plan_suicida|region|5|hombres|12-65",
+    "plan_suicida|region|6|hombres|12-65",
+    "plan_suicida|region|7|hombres|12-65",
+    "plan_suicida|region|8|hombres|12-65",
+    "plan_suicida|region|9|hombres|12-65",
+    "plan_suicida|nacional|0|mujeres|12-65",
+    "plan_suicida|region|1|mujeres|12-65",
+    "plan_suicida|region|2|mujeres|12-65",
+    "plan_suicida|region|3|mujeres|12-65",
+    "plan_suicida|region|4|mujeres|12-65",
+    "plan_suicida|region|5|mujeres|12-65",
+    "plan_suicida|region|6|mujeres|12-65",
+    "plan_suicida|region|7|mujeres|12-65",
+    "plan_suicida|region|8|mujeres|12-65",
+    "plan_suicida|region|9|mujeres|12-65",
+    "plan_suicida|nacional|0|total|12-17",
+    "plan_suicida|region|1|total|12-17",
+    "plan_suicida|region|2|total|12-17",
+    "plan_suicida|region|3|total|12-17",
+    "plan_suicida|region|4|total|12-17",
+    "plan_suicida|region|5|total|12-17",
+    "plan_suicida|region|6|total|12-17",
+    "plan_suicida|region|7|total|12-17",
+    "plan_suicida|region|8|total|12-17",
+    "plan_suicida|region|9|total|12-17",
+    "plan_suicida|nacional|0|hombres|12-17",
+    "plan_suicida|region|2|hombres|12-17",
+    "plan_suicida|region|3|hombres|12-17",
+    "plan_suicida|region|4|hombres|12-17",
+    "plan_suicida|region|5|hombres|12-17",
+    "plan_suicida|region|6|hombres|12-17",
+    "plan_suicida|region|7|hombres|12-17",
+    "plan_suicida|region|8|hombres|12-17",
+    "plan_suicida|region|9|hombres|12-17",
+    "plan_suicida|nacional|0|mujeres|12-17",
+    "plan_suicida|region|1|mujeres|12-17",
+    "plan_suicida|region|2|mujeres|12-17",
+    "plan_suicida|region|3|mujeres|12-17",
+    "plan_suicida|region|4|mujeres|12-17",
+    "plan_suicida|region|5|mujeres|12-17",
+    "plan_suicida|region|6|mujeres|12-17",
+    "plan_suicida|region|7|mujeres|12-17",
+    "plan_suicida|region|8|mujeres|12-17",
+    "plan_suicida|region|9|mujeres|12-17",
+    "plan_suicida|nacional|0|total|18-65",
+    "plan_suicida|region|1|total|18-65",
+    "plan_suicida|region|2|total|18-65",
+    "plan_suicida|region|3|total|18-65",
+    "plan_suicida|region|4|total|18-65",
+    "plan_suicida|region|5|total|18-65",
+    "plan_suicida|region|6|total|18-65",
+    "plan_suicida|region|7|total|18-65",
+    "plan_suicida|region|8|total|18-65",
+    "plan_suicida|region|9|total|18-65",
+    "plan_suicida|nacional|0|hombres|18-65",
+    "plan_suicida|region|1|hombres|18-65",
+    "plan_suicida|region|2|hombres|18-65",
+    "plan_suicida|region|3|hombres|18-65",
+    "plan_suicida|region|4|hombres|18-65",
+    "plan_suicida|region|5|hombres|18-65",
+    "plan_suicida|region|6|hombres|18-65",
+    "plan_suicida|region|7|hombres|18-65",
+    "plan_suicida|region|8|hombres|18-65",
+    "plan_suicida|region|9|hombres|18-65",
+    "plan_suicida|nacional|0|mujeres|18-65",
+    "plan_suicida|region|1|mujeres|18-65",
+    "plan_suicida|region|2|mujeres|18-65",
+    "plan_suicida|region|3|mujeres|18-65",
+    "plan_suicida|region|4|mujeres|18-65",
+    "plan_suicida|region|5|mujeres|18-65",
+    "plan_suicida|region|6|mujeres|18-65",
+    "plan_suicida|region|7|mujeres|18-65",
+    "plan_suicida|region|8|mujeres|18-65",
+    "plan_suicida|region|9|mujeres|18-65",
+    "intento_suicida|nacional|0|total|12-65",
+    "intento_suicida|region|1|total|12-65",
+    "intento_suicida|region|2|total|12-65",
+    "intento_suicida|region|3|total|12-65",
+    "intento_suicida|region|4|total|12-65",
+    "intento_suicida|region|5|total|12-65",
+    "intento_suicida|region|6|total|12-65",
+    "intento_suicida|region|7|total|12-65",
+    "intento_suicida|region|8|total|12-65",
+    "intento_suicida|region|9|total|12-65",
+    "intento_suicida|nacional|0|hombres|12-65",
+    "intento_suicida|region|1|hombres|12-65",
+    "intento_suicida|region|2|hombres|12-65",
+    "intento_suicida|region|3|hombres|12-65",
+    "intento_suicida|region|4|hombres|12-65",
+    "intento_suicida|region|5|hombres|12-65",
+    "intento_suicida|region|6|hombres|12-65",
+    "intento_suicida|region|7|hombres|12-65",
+    "intento_suicida|region|8|hombres|12-65",
+    "intento_suicida|region|9|hombres|12-65",
+    "intento_suicida|nacional|0|mujeres|12-65",
+    "intento_suicida|region|1|mujeres|12-65",
+    "intento_suicida|region|2|mujeres|12-65",
+    "intento_suicida|region|3|mujeres|12-65",
+    "intento_suicida|region|4|mujeres|12-65",
+    "intento_suicida|region|5|mujeres|12-65",
+    "intento_suicida|region|6|mujeres|12-65",
+    "intento_suicida|region|7|mujeres|12-65",
+    "intento_suicida|region|8|mujeres|12-65",
+    "intento_suicida|region|9|mujeres|12-65",
+    "intento_suicida|nacional|0|total|12-17",
+    "intento_suicida|region|1|total|12-17",
+    "intento_suicida|region|2|total|12-17",
+    "intento_suicida|region|3|total|12-17",
+    "intento_suicida|region|4|total|12-17",
+    "intento_suicida|region|5|total|12-17",
+    "intento_suicida|region|6|total|12-17",
+    "intento_suicida|region|7|total|12-17",
+    "intento_suicida|region|8|total|12-17",
+    "intento_suicida|region|9|total|12-17",
+    "intento_suicida|nacional|0|hombres|12-17",
+    "intento_suicida|region|2|hombres|12-17",
+    "intento_suicida|region|3|hombres|12-17",
+    "intento_suicida|region|4|hombres|12-17",
+    "intento_suicida|region|5|hombres|12-17",
+    "intento_suicida|region|6|hombres|12-17",
+    "intento_suicida|region|7|hombres|12-17",
+    "intento_suicida|region|8|hombres|12-17",
+    "intento_suicida|region|9|hombres|12-17",
+    "intento_suicida|nacional|0|mujeres|12-17",
+    "intento_suicida|region|1|mujeres|12-17",
+    "intento_suicida|region|2|mujeres|12-17",
+    "intento_suicida|region|3|mujeres|12-17",
+    "intento_suicida|region|4|mujeres|12-17",
+    "intento_suicida|region|5|mujeres|12-17",
+    "intento_suicida|region|6|mujeres|12-17",
+    "intento_suicida|region|7|mujeres|12-17",
+    "intento_suicida|region|8|mujeres|12-17",
+    "intento_suicida|region|9|mujeres|12-17",
+    "intento_suicida|nacional|0|total|18-65",
+    "intento_suicida|region|1|total|18-65",
+    "intento_suicida|region|2|total|18-65",
+    "intento_suicida|region|3|total|18-65",
+    "intento_suicida|region|4|total|18-65",
+    "intento_suicida|region|5|total|18-65",
+    "intento_suicida|region|6|total|18-65",
+    "intento_suicida|region|7|total|18-65",
+    "intento_suicida|region|8|total|18-65",
+    "intento_suicida|region|9|total|18-65",
+    "intento_suicida|nacional|0|hombres|18-65",
+    "intento_suicida|region|1|hombres|18-65",
+    "intento_suicida|region|2|hombres|18-65",
+    "intento_suicida|region|3|hombres|18-65",
+    "intento_suicida|region|4|hombres|18-65",
+    "intento_suicida|region|5|hombres|18-65",
+    "intento_suicida|region|6|hombres|18-65",
+    "intento_suicida|region|7|hombres|18-65",
+    "intento_suicida|region|9|hombres|18-65",
+    "intento_suicida|nacional|0|mujeres|18-65",
+    "intento_suicida|region|1|mujeres|18-65",
+    "intento_suicida|region|2|mujeres|18-65",
+    "intento_suicida|region|3|mujeres|18-65",
+    "intento_suicida|region|4|mujeres|18-65",
+    "intento_suicida|region|5|mujeres|18-65",
+    "intento_suicida|region|6|mujeres|18-65",
+    "intento_suicida|region|7|mujeres|18-65",
+    "intento_suicida|region|8|mujeres|18-65",
+    "intento_suicida|region|9|mujeres|18-65",
+    "violencia_cualquiera|nacional|0|total|12-65",
+    "violencia_cualquiera|region|1|total|12-65",
+    "violencia_cualquiera|region|2|total|12-65",
+    "violencia_cualquiera|region|3|total|12-65",
+    "violencia_cualquiera|region|4|total|12-65",
+    "violencia_cualquiera|region|5|total|12-65",
+    "violencia_cualquiera|region|6|total|12-65",
+    "violencia_cualquiera|region|7|total|12-65",
+    "violencia_cualquiera|region|8|total|12-65",
+    "violencia_cualquiera|region|9|total|12-65",
+    "violencia_cualquiera|nacional|0|hombres|12-65",
+    "violencia_cualquiera|region|1|hombres|12-65",
+    "violencia_cualquiera|region|2|hombres|12-65",
+    "violencia_cualquiera|region|3|hombres|12-65",
+    "violencia_cualquiera|region|4|hombres|12-65",
+    "violencia_cualquiera|region|5|hombres|12-65",
+    "violencia_cualquiera|region|6|hombres|12-65",
+    "violencia_cualquiera|region|7|hombres|12-65",
+    "violencia_cualquiera|region|8|hombres|12-65",
+    "violencia_cualquiera|region|9|hombres|12-65",
+    "violencia_cualquiera|nacional|0|mujeres|12-65",
+    "violencia_cualquiera|region|1|mujeres|12-65",
+    "violencia_cualquiera|region|2|mujeres|12-65",
+    "violencia_cualquiera|region|3|mujeres|12-65",
+    "violencia_cualquiera|region|4|mujeres|12-65",
+    "violencia_cualquiera|region|5|mujeres|12-65",
+    "violencia_cualquiera|region|6|mujeres|12-65",
+    "violencia_cualquiera|region|7|mujeres|12-65",
+    "violencia_cualquiera|region|8|mujeres|12-65",
+    "violencia_cualquiera|region|9|mujeres|12-65",
+    "violencia_cualquiera|nacional|0|total|12-17",
+    "violencia_cualquiera|region|1|total|12-17",
+    "violencia_cualquiera|region|2|total|12-17",
+    "violencia_cualquiera|region|3|total|12-17",
+    "violencia_cualquiera|region|4|total|12-17",
+    "violencia_cualquiera|region|5|total|12-17",
+    "violencia_cualquiera|region|6|total|12-17",
+    "violencia_cualquiera|region|7|total|12-17",
+    "violencia_cualquiera|region|8|total|12-17",
+    "violencia_cualquiera|region|9|total|12-17",
+    "violencia_cualquiera|nacional|0|hombres|12-17",
+    "violencia_cualquiera|region|1|hombres|12-17",
+    "violencia_cualquiera|region|2|hombres|12-17",
+    "violencia_cualquiera|region|3|hombres|12-17",
+    "violencia_cualquiera|region|4|hombres|12-17",
+    "violencia_cualquiera|region|5|hombres|12-17",
+    "violencia_cualquiera|region|6|hombres|12-17",
+    "violencia_cualquiera|region|7|hombres|12-17",
+    "violencia_cualquiera|region|8|hombres|12-17",
+    "violencia_cualquiera|region|9|hombres|12-17",
+    "violencia_cualquiera|nacional|0|mujeres|12-17",
+    "violencia_cualquiera|region|1|mujeres|12-17",
+    "violencia_cualquiera|region|2|mujeres|12-17",
+    "violencia_cualquiera|region|3|mujeres|12-17",
+    "violencia_cualquiera|region|4|mujeres|12-17",
+    "violencia_cualquiera|region|5|mujeres|12-17",
+    "violencia_cualquiera|region|6|mujeres|12-17",
+    "violencia_cualquiera|region|7|mujeres|12-17",
+    "violencia_cualquiera|region|8|mujeres|12-17",
+    "violencia_cualquiera|region|9|mujeres|12-17",
+    "violencia_cualquiera|nacional|0|total|18-65",
+    "violencia_cualquiera|region|1|total|18-65",
+    "violencia_cualquiera|region|2|total|18-65",
+    "violencia_cualquiera|region|3|total|18-65",
+    "violencia_cualquiera|region|4|total|18-65",
+    "violencia_cualquiera|region|5|total|18-65",
+    "violencia_cualquiera|region|6|total|18-65",
+    "violencia_cualquiera|region|7|total|18-65",
+    "violencia_cualquiera|region|8|total|18-65",
+    "violencia_cualquiera|region|9|total|18-65",
+    "violencia_cualquiera|nacional|0|hombres|18-65",
+    "violencia_cualquiera|region|1|hombres|18-65",
+    "violencia_cualquiera|region|2|hombres|18-65",
+    "violencia_cualquiera|region|3|hombres|18-65",
+    "violencia_cualquiera|region|4|hombres|18-65",
+    "violencia_cualquiera|region|5|hombres|18-65",
+    "violencia_cualquiera|region|6|hombres|18-65",
+    "violencia_cualquiera|region|7|hombres|18-65",
+    "violencia_cualquiera|region|8|hombres|18-65",
+    "violencia_cualquiera|region|9|hombres|18-65",
+    "violencia_cualquiera|nacional|0|mujeres|18-65",
+    "violencia_cualquiera|region|1|mujeres|18-65",
+    "violencia_cualquiera|region|2|mujeres|18-65",
+    "violencia_cualquiera|region|3|mujeres|18-65",
+    "violencia_cualquiera|region|4|mujeres|18-65",
+    "violencia_cualquiera|region|5|mujeres|18-65",
+    "violencia_cualquiera|region|6|mujeres|18-65",
+    "violencia_cualquiera|region|7|mujeres|18-65",
+    "violencia_cualquiera|region|8|mujeres|18-65",
+    "violencia_cualquiera|region|9|mujeres|18-65",
+    "trat_salud_mental|nacional|0|total|12-65",
+    "trat_salud_mental|region|1|total|12-65",
+    "trat_salud_mental|region|2|total|12-65",
+    "trat_salud_mental|region|3|total|12-65",
+    "trat_salud_mental|region|4|total|12-65",
+    "trat_salud_mental|region|5|total|12-65",
+    "trat_salud_mental|region|6|total|12-65",
+    "trat_salud_mental|region|7|total|12-65",
+    "trat_salud_mental|region|8|total|12-65",
+    "trat_salud_mental|region|9|total|12-65",
+    "trat_salud_mental|nacional|0|hombres|12-65",
+    "trat_salud_mental|region|1|hombres|12-65",
+    "trat_salud_mental|region|2|hombres|12-65",
+    "trat_salud_mental|region|3|hombres|12-65",
+    "trat_salud_mental|region|4|hombres|12-65",
+    "trat_salud_mental|region|5|hombres|12-65",
+    "trat_salud_mental|region|6|hombres|12-65",
+    "trat_salud_mental|region|7|hombres|12-65",
+    "trat_salud_mental|region|8|hombres|12-65",
+    "trat_salud_mental|region|9|hombres|12-65",
+    "trat_salud_mental|nacional|0|mujeres|12-65",
+    "trat_salud_mental|region|1|mujeres|12-65",
+    "trat_salud_mental|region|2|mujeres|12-65",
+    "trat_salud_mental|region|3|mujeres|12-65",
+    "trat_salud_mental|region|4|mujeres|12-65",
+    "trat_salud_mental|region|5|mujeres|12-65",
+    "trat_salud_mental|region|6|mujeres|12-65",
+    "trat_salud_mental|region|7|mujeres|12-65",
+    "trat_salud_mental|region|8|mujeres|12-65",
+    "trat_salud_mental|region|9|mujeres|12-65",
+    "trat_salud_mental|nacional|0|total|12-17",
+    "trat_salud_mental|region|1|total|12-17",
+    "trat_salud_mental|region|2|total|12-17",
+    "trat_salud_mental|region|3|total|12-17",
+    "trat_salud_mental|region|4|total|12-17",
+    "trat_salud_mental|region|5|total|12-17",
+    "trat_salud_mental|region|6|total|12-17",
+    "trat_salud_mental|region|7|total|12-17",
+    "trat_salud_mental|region|8|total|12-17",
+    "trat_salud_mental|region|9|total|12-17",
+    "trat_salud_mental|nacional|0|hombres|12-17",
+    "trat_salud_mental|region|1|hombres|12-17",
+    "trat_salud_mental|region|2|hombres|12-17",
+    "trat_salud_mental|region|3|hombres|12-17",
+    "trat_salud_mental|region|4|hombres|12-17",
+    "trat_salud_mental|region|5|hombres|12-17",
+    "trat_salud_mental|region|6|hombres|12-17",
+    "trat_salud_mental|region|7|hombres|12-17",
+    "trat_salud_mental|region|8|hombres|12-17",
+    "trat_salud_mental|region|9|hombres|12-17",
+    "trat_salud_mental|nacional|0|mujeres|12-17",
+    "trat_salud_mental|region|1|mujeres|12-17",
+    "trat_salud_mental|region|2|mujeres|12-17",
+    "trat_salud_mental|region|3|mujeres|12-17",
+    "trat_salud_mental|region|4|mujeres|12-17",
+    "trat_salud_mental|region|5|mujeres|12-17",
+    "trat_salud_mental|region|6|mujeres|12-17",
+    "trat_salud_mental|region|7|mujeres|12-17",
+    "trat_salud_mental|region|8|mujeres|12-17",
+    "trat_salud_mental|region|9|mujeres|12-17",
+    "trat_salud_mental|nacional|0|total|18-65",
+    "trat_salud_mental|region|1|total|18-65",
+    "trat_salud_mental|region|2|total|18-65",
+    "trat_salud_mental|region|3|total|18-65",
+    "trat_salud_mental|region|4|total|18-65",
+    "trat_salud_mental|region|5|total|18-65",
+    "trat_salud_mental|region|6|total|18-65",
+    "trat_salud_mental|region|7|total|18-65",
+    "trat_salud_mental|region|8|total|18-65",
+    "trat_salud_mental|region|9|total|18-65",
+    "trat_salud_mental|nacional|0|hombres|18-65",
+    "trat_salud_mental|region|1|hombres|18-65",
+    "trat_salud_mental|region|2|hombres|18-65",
+    "trat_salud_mental|region|3|hombres|18-65",
+    "trat_salud_mental|region|4|hombres|18-65",
+    "trat_salud_mental|region|5|hombres|18-65",
+    "trat_salud_mental|region|6|hombres|18-65",
+    "trat_salud_mental|region|7|hombres|18-65",
+    "trat_salud_mental|region|8|hombres|18-65",
+    "trat_salud_mental|region|9|hombres|18-65",
+    "trat_salud_mental|nacional|0|mujeres|18-65",
+    "trat_salud_mental|region|1|mujeres|18-65",
+    "trat_salud_mental|region|2|mujeres|18-65",
+    "trat_salud_mental|region|3|mujeres|18-65",
+    "trat_salud_mental|region|4|mujeres|18-65",
+    "trat_salud_mental|region|5|mujeres|18-65",
+    "trat_salud_mental|region|6|mujeres|18-65",
+    "trat_salud_mental|region|7|mujeres|18-65",
+    "trat_salud_mental|region|8|mujeres|18-65",
+    "trat_salud_mental|region|9|mujeres|18-65"
+  ]
+}

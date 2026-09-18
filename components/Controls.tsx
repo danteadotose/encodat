@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useId, useRef, useState } from "react";
-import { indicatorsByCategory, getIndicator } from "@/lib/data";
+import { indicatorsByCategory, getIndicator, hasResults } from "@/lib/data";
 
 export function Icon({ name, className = "" }: { name: "search" | "link" | "reset" | "download" | "chevron" | "close" | "menu"; className?: string }) {
   const paths = { search: "m21 21-5-5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0", link: "m10 13 4-4M8 16l-1 1a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2 1 1-1a4 4 0 0 1 6 6l-4 4a4 4 0 0 1-6 0", reset: "M3 10a9 9 0 1 1 1 8M3 3v7h7", download: "M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5", chevron: "m6 9 6 6 6-6", close: "m6 6 12 12M6 18 18 6", menu: "M4 6h16M4 12h16M4 18h16" };
@@ -37,7 +37,7 @@ export function IndicatorPicker({ value, onChange }: { value: string; onChange: 
       <div className="picker-panel">
         <label className="search-field"><Icon name="search" /><input type="search" aria-label="Buscar indicador" placeholder="Buscar indicador o tema…" value={search} onChange={e => setSearch(e.target.value)} /></label>
         <div className="picker-options" aria-label="Indicadores disponibles">
-          {groups.map(g => <div key={g.category}><div className="picker-category">{g.category}</div>{g.items.map(i => <button key={i.indicator_id} aria-pressed={value === i.indicator_id} onClick={() => { onChange(i.indicator_id); setSearch(""); if (ref.current) { ref.current.open = false; ref.current.querySelector("summary")?.focus(); } }}><span>{i.short_label}<small>{i.period}</small></span><span aria-hidden="true">{value === i.indicator_id ? "✓" : ""}</span></button>)}</div>)}
+          {groups.map(g => <div key={g.category}><div className="picker-category">{g.category}</div>{g.items.map(i => { const ok = hasResults(i.indicator_id); return <button key={i.indicator_id} aria-pressed={value === i.indicator_id} title={ok ? undefined : "Indicador del catálogo sin resultados publicables: se abre con su estado de disponibilidad y su motivo, sin cifra."} onClick={() => { onChange(i.indicator_id); setSearch(""); if (ref.current) { ref.current.open = false; ref.current.querySelector("summary")?.focus(); } }}><span>{i.short_label}<small>{i.period}{ok ? "" : " · sin resultados publicables"}</small></span><span>{!ok && <span className="opt-flag">Sin cifra</span>}<span aria-hidden="true">{value === i.indicator_id ? " \u2713" : ""}</span></span></button>; })}</div>)}
           {!groups.length && <div className="empty-state"><p>No hay indicadores con esa búsqueda.</p><button className="btn btn-secondary mt-3" onClick={() => setSearch("")}>Limpiar búsqueda</button></div>}
         </div>
       </div>
@@ -46,10 +46,13 @@ export function IndicatorPicker({ value, onChange }: { value: string; onChange: 
 }
 
 export function ReadingGuide() {
-  return <details className="reading-guide"><summary>Cómo leer las cifras</summary><dl className="grid sm:grid-cols-3 gap-4 mt-4">
-    <div><dt>IC 95%</dt><dd>Intervalo de confianza al 95% que acompaña a la estimación y expresa su incertidumbre.</dd></div>
-    <div><dt>CV</dt><dd>Coeficiente de variación: error estándar relativo, en porcentaje. Un valor menor indica mayor precisión.</dd></div>
-    <div><dt>N y n</dt><dd>N corresponde a población ponderada; n es el tamaño de muestra sin ponderar, disponible en el CSV.</dd></div>
+  return <details className="reading-guide"><summary>Cómo leer las cifras</summary><dl className="grid sm:grid-cols-2 gap-5 mt-4 mb-5">
+    <div><dt>IC 95 %</dt><dd>Intervalo de confianza al 95 % que acompaña a la estimación y expresa su incertidumbre. El solapamiento de dos intervalos no es una prueba de igualdad ni de diferencia.</dd></div>
+    <div><dt>CV</dt><dd>Coeficiente de variación: error estándar relativo, en porcentaje. Menor es más preciso. Ausente se lee «No disponible»; un CV ausente no permite afirmar la precisión.</dd></div>
+    <div><dt>N ponderada de la categoría</dt><dd>Población estimada de quienes cumplen la definición del indicador. Proviene de la tabla fuente; no se obtiene multiplicando la prevalencia por la población.</dd></div>
+    <div><dt>N ponderada del universo analítico</dt><dd>Denominador del indicador: la población base expandida. No es un número de casos de la muestra y no se usa como tamaño de muestra.</dd></div>
+    <div><dt>Región</dt><dd>La unidad geográfica son las 9 regiones ENCODAT. No hay estimaciones por entidad federativa; las entidades solo construyen los contornos del mapa.</dd></div>
+    <div><dt>Procedencia de la definición</dt><dd>Cada indicador declara si su variable derivada viene de la sintaxis oficial o es una derivación propia del proyecto mientras falta ese texto.</dd></div>
   </dl></details>;
 }
 
